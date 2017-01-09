@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}七只麻雀食品专营-产品{% endblock %}
+{% block content %}
+    <div>
+        {{ string  }}
+        {% for i in TutorialList %}
+            {{ i  }}
+        {% endfor %}
+    </div>
+    <div>
+    <img src="../static/image/青豆全.jpg" class="img-responsive" alt="响应式图像">
+    </div>
+{% endblock %}
+{#站点：{{ info_dict.site  }}内容：{{ info_dict.content  }}#}

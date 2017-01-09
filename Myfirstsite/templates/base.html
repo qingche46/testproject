@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}默认标题{% endblock %} - 为美味而生</title>
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css">
+    <link rel="stylesheet"href="../../static/css/tem/base.css">
+	{% block linkcss %}{% endblock %}
+    <script src="../../static/js/jquery-3.1.1.min.js"></script>
+    <script src="../../static/js/bootstrap.min.js"></script>
+    <script src="../../static/js/tem/base.js"></script>
+    {% block linkjs %}{% endblock %}
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar navbar-default " role="navigation">
+            <div class="navbar-header">
+         　    <a href="/" class="navbar-brand">七只麻雀</a>
+         　 </div>
+            <ul class="nav nav-tabs nav-justified "role="tablist">
+                <li class="active"><a data-toggle="tab" href="#product">产品</a> </li>
+                <li><a data-toggle="tab" href="#food">蒸蛋糕</a> </li>
+                <li><a data-toggle="tab" href="#health">青豆</a> </li>
+                <li><a data-toggle="tab" href="#company">瓜子仁</a> </li>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        {% block content %}
+
+        {% endblock %}
+    </div>
+
+    <div class="container">
+        <h1 class="page-header"></h1>
+
+
+        <div class="row">
+            <!-- 部分：一 -->
+            <div class="col-md-4">
+                <h4>- - Health</h4>
+                <ol class="list-unstyled">
+                    <li><a href="#">健康</a></li>
+    {#              <li><a href="#">开源中国</a></li>#}
+    {#              <li><a href="#">infoq</a></li>#}
+                </ol>
+            </div>
+            <!-- 部分：二 -->
+            <div class="col-md-4">
+                <h4>- - Company</h4>
+                <ol class="list-unstyled">
+                    <li><a href="#">公司</a></li>
+    {#              <li><a href="#">开源中国</a></li>#}
+    {#              <li><a href="#">infoq</a></li>#}
+                </ol>
+
+            </div>
+            <!-- 部分：三 -->
+            <div class="col-md-4">
+                <h4>- - Focus</h4>
+                <ol class="list-unstyled">
+                  <li><a href="#">关注微信</a></li>
+    {#              <li><a href="#">开源中国</a></li>#}
+    {#              <li><a href="#">infoq</a></li>#}
+                    <img src="../../static/image/wechat.jpg">
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-default" role="navigation">
+ 　 </div>
+    <p class="text-center">Copyright © 2013-2017 七只麻雀食品专营   All Rights Reserved.</p>
+
+</body>
+</html>

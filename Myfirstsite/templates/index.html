@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}七只麻雀食品专营{% endblock %}
+{% block linkcss %}<link rel="stylesheet" href="../../static/css/tem/index.css" >{% endblock %}
+{% block linkjs %}<script src="../../static/js/tem/index.js"></script>{% endblock %}
+{% block content %}
+    <div class="tab-content">
+        <div id="product"class="tab-pane fade in active">
+              <div id="myCarousel" class="carousel slide">
+	                <!-- 轮播（Carousel）指标 -->
+	                <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		                <li data-target="#myCarousel" data-slide-to="1"></li>
+		                <li data-target="#myCarousel" data-slide-to="2"></li>
+	                </ol>
+	                <!-- 轮播（Carousel）项目 -->
+                    <div class="carousel-inner">
+		                <div class="item active">
+			                <img src="../../static/image/宣传页.jpg" alt="First slide">
+		                </div>
+		                <div class="item">
+			                <img src="../../static/image/宣传页.jpg" alt="Second slide">
+		                </div>
+		                <div class="item">
+			            <img src="../../static/image/宣传页.jpg" alt="Third slide">
+		                </div>
+	                </div>
+	                <!-- 轮播（Carousel）导航 -->
+	                <a class="carousel-control left" href="#myCarousel"
+	                data-slide="prev">&lsaquo;</a>
+	                <a class="carousel-control right" href="#myCarousel"
+	                data-slide="next">&rsaquo;</a>
+              </div>
+        </div>
+        <div id="food" class="tab-pane fade">
+            <div>
+            <img src="../static/image/蒸蛋糕全.jpg" class="img-responsive center-block" alt="响应式图像">
+            </div>
+        </div>
+        <div id="health" class="tab-pane fade">
+            <div>
+            <img src="../static/image/青豆全.jpg" class="img-responsive center-block" alt="响应式图像">
+            </div>
+        </div>
+        <div id="company" class="tab-pane fade">
+            <div>
+            <img src="../static/image/瓜子仁.jpg" class="img-responsive center-block" alt="响应式图像">
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{#站点：{{ info_dict.site  }}内容：{{ info_dict.content  }}#}
